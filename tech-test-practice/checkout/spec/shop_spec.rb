@@ -10,4 +10,5 @@ describe 'shop' do
     shop = Shop.new
     expect(shop.checkout('DDC')).to eq(50)
   end
+
 end
