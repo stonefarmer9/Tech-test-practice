@@ -10,4 +10,15 @@ describe 'Scrabble' do
     game = Scrabble.new
     expect(game.score('words')).to eq(9)
   end
+
+  it 'returns 11 for fake' do
+    game = Scrabble.new
+    expect(game.score('fake')).to eq(11)
+  end
+
+  it 'returns 0 for empty string' do
+    game = Scrabble.new
+    expect(game.score('')).to eq(0)
+
+  end
 end
